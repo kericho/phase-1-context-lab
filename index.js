@@ -7,7 +7,7 @@ function createEmployeeRecord(array){
      title: array[2],
      payPerHour: array[3],
      timeInEvents:[],
-     timeOutEvents:[],
+     timeOutEvents:[]
     }
  }
  function createEmployeeRecords(array){
@@ -25,7 +25,7 @@ function createEmployeeRecord(array){
      this.timeOutEvents.push({
          type: "TimeOut",
          hour: parseInt(dateStamp.split(" ")[1],10),
-         date: dateStamp.split(" ")[0],
+         date: dateStamp.split(" ")[0]
      });
      return this;
  }
